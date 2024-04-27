@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco-Conscious Product Reviews</title>
+    <style>
+      /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #38b000;
+    color: #fff;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #1a1a1a;
+    font-size: 2em;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+/* Added styles for active link */
+nav a.active {
+    color: #ffffff; /* Change color for active link */
+    font-weight: bold;
+    background-color: #4caf50;
+}
+
+nav a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.product-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    background-color: #38b000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #38b000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .product-card {
+        flex-direction: column;
+    }
+
+    .product-info, .product-card img {
+        width: 100%;
+    }
+}
+
+/* Banner Section Styles */
+#banner {
+    background-image: url("path/to/banner-image.jpg"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#banner h2 {
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 0 0 3px #000;
+}
+
+/* Product Review Styles */
+.product-review {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.product-review h3 {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.product-review p {
+    margin-bottom: 0;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating span {
+    margin-right: 5px;
+}
+
+.star {
+    font-size: 1.5em;
+    color: #ffc107;
+}
+
+/* Added hover effect for navigation links */
+nav a:hover {
+    background-color: #38b000; 
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Eco-Conscious Product Reviews</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Eco-Conscious Product Reviews!</h2>
+            <p>We help you make informed decisions about the environmental impact of the products you buy.</p>
+            <img src="path/to/banner-image.jpg" alt="Eco-conscious product reviews">
+        </section>
+
+        <section id="products">
+            <h2>Featured Products</h2>
+            <div class="product1">
+                <img src="images/water-bottle.jpg" alt="Product 1">
+                <div class="product-info">
+                    <h3>Reusable water bottle</h3>
+                    <p>An eco friendly reusable water bottle.</p>
+                    <div class="product-actions">
+                        <a href="#" class="button">Read Review</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product2">
+              <img src="images/bambootoothbrush.jpg" alt="Product 2">
+              <div class="product-info">
+                  <h3>Eco friendly tooth brush</h3>
+                  <p>An eco friendly reusable Tooth brush.</p>
+                  <div class="product-actions">
+                      <a href="#" class="button">Read Review</a>
+                  </div>
+              </div>
+              <div class="product3">
+                <img src="images/cotton-tshirt.jpg" alt="Product 2">
+                <div class="product-info">
+                    <h3>Eco friendly T-shirt</h3>
+                    <p>An eco friendly comfortable T-shirt.</p>
+                    <div class="product-actions">
+                        <a href="#" class="button">Read Review</a>
+                    </div>
+                </div>
+          </div>
+            </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Our mission is to empower consumers to make sustainable choices.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us if you have any questions or suggestions.</p>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Eco-Conscious Product Reviews 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
